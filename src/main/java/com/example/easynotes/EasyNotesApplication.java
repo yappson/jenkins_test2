@@ -8,12 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
 @EnableJpaAuditing
-public class EasyNotesApplication extends SpringBootServletInitializer {
+public class EasyNotesApplication {
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(EasyNotesApplication.class);
-	}
 	public static void main(String[] args) {
 		SpringApplication.run(EasyNotesApplication.class, args);
 	}
